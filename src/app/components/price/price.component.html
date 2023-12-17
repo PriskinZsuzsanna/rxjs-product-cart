@@ -1,0 +1,11 @@
+<section *ngIf="actual$ | async as actual" class="price">
+    <div class="flex">
+        <div class="left-flex">
+            <h2>${{actual.price | number:'1.2-2'}}</h2>
+            <p class="discount">{{actual.discount | percent : '2.0'}}</p>
+        </div>
+        <div>
+            <p class="original-price">${{actual.price * (1 / actual.discount) | number:'1.2-2'}}</p>
+        </div>
+    </div>
+</section>

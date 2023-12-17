@@ -1,0 +1,38 @@
+<article class="gallery-section">
+    <div class="big-img-container">
+        <button class="prev-next">
+            <img src="assets/images/icon-previous.svg" alt="">
+        </button>
+        <button class="prev-next">
+            <img src="assets/images/icon-next.svg" alt="">
+        </button>
+        <div *ngIf="showCart$ | async" class="open-cart">
+            <h3>Cart</h3>
+            <div *ngFor="let item of cartObservable$ | async" class="items">
+                <div class="checkout-flex">
+                    <img class="checkout-img" src="assets/images/image-product-1-thumbnail.jpg" alt="">
+                    <div>
+                        <p>{{item.title | titlecase}}</p>
+                        <p>${{item.price | number: '1.2-2'}} x {{item.quantity}} <span>${{(item.price * item.quantity)  | number: '1.2-2'}}</span></p>
+                    </div>
+                    <img src="assets/images/icon-delete.svg" alt="">
+                </div>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div class="thumbs">
+        <div class="img-thumb-container">
+            <img src="assets/images/image-product-1-thumbnail.jpg" alt="">
+        </div>
+        <div class="img-thumb-container">
+            <img src="assets/images/image-product-2-thumbnail.jpg" alt="">
+        </div>
+        <div class="img-thumb-container">
+            <img src="assets/images/image-product-3-thumbnail.jpg" alt="">
+        </div>
+        <div class="img-thumb-container">
+            <img src="assets/images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+    </div>
+</article>

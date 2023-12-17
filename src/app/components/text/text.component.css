@@ -1,0 +1,31 @@
+.highligted {
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: .9;
+    padding-block: var(--padding-block-sm);
+}
+
+p.paragraph {
+    color: var(--dark-grayish-blue);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 375px) {
+    .highligted {
+        font-size: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    p.paragraph {
+        font-size: 1.3rem;
+    }
+}

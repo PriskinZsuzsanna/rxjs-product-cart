@@ -1,0 +1,5 @@
+<section *ngIf="actual$ | async as actual" class="text">
+    <p class="highligted">{{actual.group | uppercase}}</p>
+    <h1>{{actual.title | titlecase}}</h1>
+    <p class="paragraph">{{actual.text}}</p>
+</section>

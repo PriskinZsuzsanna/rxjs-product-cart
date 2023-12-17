@@ -1,0 +1,15 @@
+<section class="actions flex-wrap">
+    <div class="action-container">
+        <button (click)="count('-')">
+            <img src="assets/images/icon-minus.svg" alt="">
+        </button>
+        <p class="action-chart-count">{{number$ | async}}</p>
+        <button (click)="count('+')">
+            <img src="assets/images/icon-plus.svg" alt="">
+        </button>
+    </div>
+    <button class="add" (click)="addToCart(id)">
+        <img src="assets/images/icon-cart-white.svg" alt="">
+        Add to cart
+    </button>
+</section>

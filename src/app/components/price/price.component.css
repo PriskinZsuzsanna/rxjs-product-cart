@@ -1,0 +1,30 @@
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.discount {
+    color: var(--orange);
+    background: var(--pale-orange);
+    padding: .4rem .6rem;
+    border-radius: .4rem;
+}
+
+.original-price {
+    opacity: .25;
+    text-decoration: line-through;
+}
+
+@media (min-width: 375px) {
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+}

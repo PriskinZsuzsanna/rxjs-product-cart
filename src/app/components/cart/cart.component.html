@@ -1,0 +1,7 @@
+<div class="cart-section">
+    <div (click)="toggleCart()" class="cart-div">
+        <img src="assets/images/icon-cart.svg" alt="">
+        <small>{{cartItems$ | async}}</small>
+    </div>
+    <img class="avatar" src="assets/images/image-avatar.png" alt="">
+</div>
