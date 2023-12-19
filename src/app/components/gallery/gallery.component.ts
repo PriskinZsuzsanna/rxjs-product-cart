@@ -16,4 +16,9 @@ export class GalleryComponent {
 
   constructor(private dataService: DataService){}
 
+  deleteItem(id:number){
+    this.dataService.deleteItem(id)
+    this.cartObservable$ = this.dataService.itemsInCart$
+  }
+
 }

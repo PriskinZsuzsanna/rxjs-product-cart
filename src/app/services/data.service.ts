@@ -23,8 +23,7 @@ export class DataService {
   idParam:number  = 1
 
   actual$ = this.data$.pipe(
-    map((data : Item[]) => data.find(item => item.id === this.idParam)),
-    //tap(data => console.log(data)),
+    map((data : Item[]) => data.find(item => item.id === this.idParam))
   )
 
   chartNumberSubject = new BehaviorSubject<number>(0)
@@ -96,4 +95,16 @@ export class DataService {
     console.log(current)
     this.showCartSubject.next(!current)
   }
+
+  deleteItem(id: number): void {
+    const currentItems = this.cartSubject.value;
+    const updatedItems = currentItems.filter(item => item.id !== id);
+  
+    this.cartSubject.next(updatedItems);
+  
+    if (updatedItems.length === 0) {
+      this.toggleCart();
+    }
+  }
+
 }

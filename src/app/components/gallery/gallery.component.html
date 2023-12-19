@@ -15,7 +15,7 @@
                         <p>{{item.title | titlecase}}</p>
                         <p>${{item.price | number: '1.2-2'}} x {{item.quantity}} <span>${{(item.price * item.quantity)  | number: '1.2-2'}}</span></p>
                     </div>
-                    <img src="assets/images/icon-delete.svg" alt="">
+                    <img (click)="deleteItem(item.id)" src="assets/images/icon-delete.svg" alt="">
                 </div>
             </div>
             <button class="checkout-btn">Checkout</button>
