@@ -1,9 +1,10 @@
 <article class="gallery-section">
     <div class="big-img-container">
-        <button class="prev-next">
+        <img class="actual-gallery-img" src="assets/images/image-product-{{actualImgObservable$ | async}}.jpg" alt="">
+        <button class="prev-next" (click)="imgChange('+')">
             <img src="assets/images/icon-previous.svg" alt="">
         </button>
-        <button class="prev-next">
+        <button class="prev-next"(click)="imgChange('-')">
             <img src="assets/images/icon-next.svg" alt="">
         </button>
         <div *ngIf="showCart$ | async" class="open-cart">
@@ -22,17 +23,17 @@
         </div>
     </div>
     <div class="thumbs">
-        <div class="img-thumb-container">
-            <img src="assets/images/image-product-1-thumbnail.jpg" alt="">
+        <div class="img-thumb-container" [ngClass]="{grayscale : actualImageSubject.value == 1}">
+            <img class="thumb" (click)="changeFromThumb(1)" src="assets/images/image-product-1-thumbnail.jpg" alt="">
         </div>
-        <div class="img-thumb-container">
-            <img src="assets/images/image-product-2-thumbnail.jpg" alt="">
+        <div class="img-thumb-container" [ngClass]="{grayscale : actualImageSubject.value == 2}">
+            <img class="thumb" (click)="changeFromThumb(2)" src="assets/images/image-product-2-thumbnail.jpg" alt="">
         </div>
-        <div class="img-thumb-container">
-            <img src="assets/images/image-product-3-thumbnail.jpg" alt="">
+        <div class="img-thumb-container" [ngClass]="{grayscale : actualImageSubject.value == 3}">
+            <img class="thumb" (click)="changeFromThumb(3)" src="assets/images/image-product-3-thumbnail.jpg" alt="">
         </div>
-        <div class="img-thumb-container">
-            <img src="assets/images/image-product-4-thumbnail.jpg" alt="">
+        <div class="img-thumb-container" [ngClass]="{grayscale : actualImageSubject.value == 4}">
+            <img class="thumb" (click)="changeFromThumb(4)" src="assets/images/image-product-4-thumbnail.jpg" alt="">
         </div>
     </div>
 </article>

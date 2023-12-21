@@ -1,4 +1,15 @@
 <div class="logo">
-    <img src="assets/images/icon-menu.svg" alt="">
+    <div *ngIf="isOpenSubject.value" class="filter" ></div>
+    <nav *ngIf="isOpenSubject.value" class="open-mobile-nav">
+        <img (click)="openClose()" src="assets/images/icon-close.svg" alt="">
+        <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <img (click)="openClose()" src="assets/images/icon-menu.svg" alt="">
     <img src="assets/images/logo.svg" alt="" class="logo-title">
 </div>

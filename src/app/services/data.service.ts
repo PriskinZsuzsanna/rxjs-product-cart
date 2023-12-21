@@ -32,8 +32,8 @@ export class DataService {
   cartSubject = new BehaviorSubject<{id: number, quantity: number}[]>([])
   cartObservable$ = this.cartSubject.asObservable()
 
-  itemsInCartSubject = new BehaviorSubject<number>(0)
-  itemsInCartObservable$ = this.itemsInCartSubject.asObservable()
+  //itemsInCartSubject = new BehaviorSubject<number>(0)
+  //itemsInCartObservable$ = this.itemsInCartSubject.asObservable()
 
   showCartSubject = new BehaviorSubject<boolean>(false)
   showCartObservable$ = this.showCartSubject.asObservable()

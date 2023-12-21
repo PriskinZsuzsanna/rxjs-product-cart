@@ -6,12 +6,24 @@
     max-width: 100%;
     height: 33vh;
     position: relative;
-    background: url('/assets/images/image-product-1.jpg') no-repeat center/cover;
+    /*background: url('/assets/images/image-product-1.jpg') no-repeat center/cover;*/
+}
+
+
+img.actual-gallery-img {
+    width: 100%;
+    height: 33vh;
+    object-fit: cover;
+}
+
+img.thumb{
+    border-radius: .6rem;
+    max-width: 100%;
 }
 
 .big-img-container .prev-next {
     position: absolute;
-    padding: 1rem 1.3rem;
+    padding: .7rem 1rem;
     border-radius: 50%;
 }
 
@@ -27,6 +39,10 @@
 
 .thumbs {
     display: none;
+}
+
+.grayscale {
+    filter: grayscale(70%);
 }
 
 /*---------------CART---------------------*/

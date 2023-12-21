@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-logo',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class LogoComponent {
 
+  isOpenSubject = new BehaviorSubject<boolean>(false)
+
+  openClose(){
+    let actual = this.isOpenSubject.value
+    this.isOpenSubject.next(!actual)
+  }
 }

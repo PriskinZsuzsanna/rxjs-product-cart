@@ -37,11 +37,6 @@ img {
     cursor: pointer;
 }
 
-img:not(.logo img) {
-    border-radius: .6rem;
-    max-width: 100%;
-}
-
 body {
     font-family: 'Kumbh Sans', sans-serif;
     background: var(--white);
@@ -60,6 +55,7 @@ section {
 header {
     padding-block: var(--padding-block-sm);
     padding-inline: var(--padding-inline-sm);
+    position: relative;
 }
 
 main {
