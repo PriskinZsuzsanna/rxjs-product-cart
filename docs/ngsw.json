@@ -1,0 +1,123 @@
+{
+  "configVersion": 1,
+  "timestamp": 1703192250347,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.fd73714d3c885ad8.js",
+        "/manifest.webmanifest",
+        "/polyfills.2257fb8b343799c4.js",
+        "/runtime.057f7b5505029b52.js",
+        "/styles.40911a1e23d7e280.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/data.json",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/favicon-32x32.png",
+        "/assets/images/icon-cart-white.svg",
+        "/assets/images/icon-cart.svg",
+        "/assets/images/icon-close.svg",
+        "/assets/images/icon-delete.svg",
+        "/assets/images/icon-menu.svg",
+        "/assets/images/icon-minus.svg",
+        "/assets/images/icon-next.svg",
+        "/assets/images/icon-plus.svg",
+        "/assets/images/icon-previous.svg",
+        "/assets/images/image-avatar.png",
+        "/assets/images/image-product-1-thumbnail.jpg",
+        "/assets/images/image-product-1.jpg",
+        "/assets/images/image-product-2-thumbnail.jpg",
+        "/assets/images/image-product-2.jpg",
+        "/assets/images/image-product-3-thumbnail.jpg",
+        "/assets/images/image-product-3.jpg",
+        "/assets/images/image-product-4-thumbnail.jpg",
+        "/assets/images/image-product-4.jpg",
+        "/assets/images/logo.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/data.json": "ec931e5e4ab9e0a71b8344b2ee6370ccf0fefe3d",
+    "/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/assets/images/favicon-32x32.png": "8bda447b3b6b894af94d42247ab951b5b255abfb",
+    "/assets/images/icon-cart-white.svg": "f9bdedcd3fcc2c067185d6a53cc5749a5da06f0a",
+    "/assets/images/icon-cart.svg": "44a3e4fee7ae6e0c8da768a2843b3bff2d377f69",
+    "/assets/images/icon-close.svg": "23bfd34906491d25a5bcdaf55de5bfd4975122e5",
+    "/assets/images/icon-delete.svg": "f42c57a7ec5dd5c04eaea6de1b3fffcb9226bc3c",
+    "/assets/images/icon-menu.svg": "5cd5c72e450dc0d7529c51f9d09c68f8724b5f2e",
+    "/assets/images/icon-minus.svg": "9442779210891e1b02ed29a77afd5fdf00730bc7",
+    "/assets/images/icon-next.svg": "478f539e9fa317f1e5e2d0788671c81a6d5b2d29",
+    "/assets/images/icon-plus.svg": "89f19a554745d15be17cada9970c285476415d4f",
+    "/assets/images/icon-previous.svg": "53546fd11fd4c277efccca1d8e84f60ba209b847",
+    "/assets/images/image-avatar.png": "263bf395bd4f46b94c6cc072e2985b2b5d9a5f18",
+    "/assets/images/image-product-1-thumbnail.jpg": "b8126323e3a511468dbe24f6234198b69b7fbb7b",
+    "/assets/images/image-product-1.jpg": "0d148d1bbc95e16131db4781fe1fa188de6f80bd",
+    "/assets/images/image-product-2-thumbnail.jpg": "098ed7379d2461de72dea0a5b1b3c2be02cf077f",
+    "/assets/images/image-product-2.jpg": "3dea1fd559daf8063c2f85677814f8b760d6713c",
+    "/assets/images/image-product-3-thumbnail.jpg": "5959a67b043b5711996a9c292a29cbffa4d76c25",
+    "/assets/images/image-product-3.jpg": "34ac9452a05b0a1341bb8bab3e796f1530bbf917",
+    "/assets/images/image-product-4-thumbnail.jpg": "bd554f25370078e2f08b664921407b63ca686640",
+    "/assets/images/image-product-4.jpg": "11cc678c3d9171cad1a5656fac3b99178224fa20",
+    "/assets/images/logo.svg": "062c9f1328cb4f6c866917c8dff97979c10ce50a",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "61e4eeb1d42adfb63db7ad3de0540c9e9506e279",
+    "/main.fd73714d3c885ad8.js": "5104fdce2714acf7febe965a776701a07e8c034a",
+    "/manifest.webmanifest": "f764a3646894d9312dcbba02765856cb84c723c4",
+    "/polyfills.2257fb8b343799c4.js": "11c5f8733fdd90834e338a8612b3c46907fc9147",
+    "/runtime.057f7b5505029b52.js": "5a75f033f77d6dee3533aa65e0ec58f13a99273d",
+    "/styles.40911a1e23d7e280.css": "7c1f937340d8a8f992a21c2d62fadfd45c6b6a06"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
