@@ -54,7 +54,7 @@ img.thumb{
     background: var(--white);
     border-radius: .6rem;
     padding: 1.4rem;
-    z-index: 10;
+    z-index: 5;
     margin: 2rem;
 }
 

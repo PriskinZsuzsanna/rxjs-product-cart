@@ -47,4 +47,9 @@ ul li {
     img:nth-of-type(1) {
         display: none;
     }
+
+    .open-mobile-nav,
+    .filter {
+        display: none;
+    }
 }
