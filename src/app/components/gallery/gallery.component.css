@@ -106,7 +106,14 @@ h3 {
 
     .big-img-container {
         border-radius: .6rem;
-        height: 45vh;
+        height: min(60vh, 600px);
+        border-radius: .3rem;
+    }
+    
+    img.actual-gallery-img {
+        height: min(60vh, 600px);
+        object-fit: fill;
+        border-radius: .3rem;
     }
     
     .big-img-container .prev-next {

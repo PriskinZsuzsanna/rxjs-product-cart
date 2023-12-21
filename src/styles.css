@@ -38,13 +38,27 @@ img {
 }
 
 body {
+    width: 100dvw;
     font-family: 'Kumbh Sans', sans-serif;
     background: var(--white);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 12rem);
+}
+
 .container {
-    width: min(100%, 1200px);
+    width: min(100vw, 1200px);
     margin-inline: auto;
+}
+
+.container-nav {
+    margin-inline: auto;
+    width: min(90vw, 1200px);
+
 }
 
 section {
@@ -103,7 +117,7 @@ main {
     }
 
     .grid {
-        padding-top: 1.5rem;
+        padding-top: 1rem;
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     }
 }
