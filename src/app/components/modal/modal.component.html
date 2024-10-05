@@ -1,0 +1,17 @@
+<div class="open-cart">
+    <div class="cart-header">
+        <h3>Cart</h3>
+        <p (click)="toggleCart()">X</p>
+    </div>
+    <div *ngFor="let item of cartObservable$ | async" class="items">
+        <div class="checkout-flex">
+            <img class="checkout-img" src="assets/images/image-product-1-thumbnail.jpg" alt="">
+            <div>
+                <p>{{item.title | titlecase}}</p>
+                <p>${{item.price | number: '1.2-2'}} x {{item.quantity}} <span>${{(item.price * item.quantity)  | number: '1.2-2'}}</span></p>
+            </div>
+            <img (click)="deleteItem(item.id)" src="assets/images/icon-delete.svg" alt="">
+        </div>
+    </div>
+    <button class="checkout-btn">Checkout</button>
+</div>

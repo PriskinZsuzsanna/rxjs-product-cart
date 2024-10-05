@@ -8,10 +8,10 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class LogoComponent {
 
-  isOpenSubject = new BehaviorSubject<boolean>(false)
+  isOpenSubject = new BehaviorSubject<boolean>(false);
 
   openClose(){
-    let actual = this.isOpenSubject.value
-    this.isOpenSubject.next(!actual)
+    let actual = this.isOpenSubject.value;
+    this.isOpenSubject.next(!actual);
   }
 }

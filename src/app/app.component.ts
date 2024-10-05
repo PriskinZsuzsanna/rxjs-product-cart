@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { DataService } from './services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'product-page-rxjs';
+  showCart$ = this.dataService.showCartObservable$;
+  
+  constructor(private dataService : DataService) { }
 }

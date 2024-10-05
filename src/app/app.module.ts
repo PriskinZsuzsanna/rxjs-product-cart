@@ -11,6 +11,8 @@ import { ActionsComponent } from './components/actions/actions.component';
 import { CartComponent } from './components/cart/cart.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { ModalComponent } from './components/modal/modal.component';
+import { DialogModule } from '@angular/cdk/dialog';
 
 @NgModule({
   declarations: [
@@ -21,11 +23,13 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     PriceComponent,
     ActionsComponent,
     CartComponent,
-    LogoComponent
+    LogoComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    DialogModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable

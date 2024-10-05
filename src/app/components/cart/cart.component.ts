@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
-import {map} from 'rxjs/operators'
 
 @Component({
   selector: 'app-cart',
@@ -8,12 +7,11 @@ import {map} from 'rxjs/operators'
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent {
+  cartItems$ = this.dataService.getTotalQuantity();
 
-  cartItems$ = this.dataService.getTotalQuantity()
+  constructor(private dataService: DataService) { }
 
-  constructor(private dataService: DataService){}
-
-  toggleCart(){
-    this.dataService.toggleCart()
+  toggleCart() {
+    this.dataService.toggleCart();
   }
 }

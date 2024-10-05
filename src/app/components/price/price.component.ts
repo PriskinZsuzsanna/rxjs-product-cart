@@ -7,10 +7,7 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./price.component.css']
 })
 export class PriceComponent {
-  
-  actual$ = this.dataService.actual$
+  actual$ = this.dataService.actual$;
 
-  constructor(private dataService: DataService){
-
-  }
+  constructor(private dataService: DataService){ }
 }

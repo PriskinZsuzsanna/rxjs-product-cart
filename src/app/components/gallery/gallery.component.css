@@ -45,60 +45,6 @@ img.thumb{
     filter: grayscale(70%);
 }
 
-/*---------------CART---------------------*/
-
-.open-cart {
-    position: absolute;
-    width: calc(100% - 4rem);
-    top: 0;
-    background: var(--white);
-    border-radius: .6rem;
-    padding: 1.4rem;
-    z-index: 5;
-    margin: 2rem;
-}
-
-h3 {
-    padding-bottom: 1.4rem;
-    border-bottom: 1px solid var(--light-grayish-blue);
-}
-
-.checkout-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    padding-block: 1rem;
-}
-
-.checkout-flex div {
-    width: 100%;
-}
-
-.checkout-img {
-    max-width: 100px;
-}
-
-.open-cart .checkout-btn {
-    border-radius: .6rem;
-    width: 100%;
-    background: var(--orange);
-    color: var(--white);
-    padding: 1.2rem;
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-
-.open-cart p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.open-cart span {
-    font-weight: 700;
-    padding-inline: 1rem;
-}
-
 @media (min-width: 900px) {
     .gallery-section {
         padding: 1rem;

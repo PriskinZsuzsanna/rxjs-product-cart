@@ -38,9 +38,13 @@ img {
 }
 
 body {
-    width: 100dvw;
+    width: 100%;
     font-family: 'Kumbh Sans', sans-serif;
     background: var(--white);
+}
+
+app-root {
+    position: relative;
 }
 
 main {

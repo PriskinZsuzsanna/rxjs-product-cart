@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -9,17 +8,17 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class ActionsComponent {
 
-  id: number = this.dataService.idParam
-  number$ = this.dataService.chartNumberObservable$
-  chart$ = this.dataService.cartObservable$
+  id: number = this.dataService.idParam;
+  number$ = this.dataService.chartNumberObservable$;
+  chart$ = this.dataService.cartObservable$;
 
-  constructor(private dataService: DataService){}
+  constructor(private dataService: DataService) { }
 
-  addToCart(id:number){
-    this.dataService.addToCart(id)
+  addToCart(id: number):void {
+    this.dataService.addToCart(id);
   }
 
-  count(action:string){
-    this.dataService.count(action)
+  count(action: string): void {
+    this.dataService.count(action);
   }
 }
