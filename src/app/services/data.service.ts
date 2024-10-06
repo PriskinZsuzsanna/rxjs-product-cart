@@ -91,8 +91,5 @@ export class DataService {
     const currentItems = this.cartSubject.value;
     const updatedItems = currentItems.filter(item => item.id !== id);
     this.cartSubject.next(updatedItems);
-    if (updatedItems.length === 0) {
-      this.toggleCart();
-    }
   }
 }

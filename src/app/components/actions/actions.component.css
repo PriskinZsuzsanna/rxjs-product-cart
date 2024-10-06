@@ -1,36 +1,49 @@
 .action-container {
-    width: 100%;
-    background: var(--light-grayish-blue);
-    padding: 1.2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 700;
-    font-size: 1.3rem;
-    border-radius: .6rem;
+	width: 100%;
+	background: var(--light-grayish-blue);
+	padding: 1.2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 700;
+	font-size: 1.3rem;
+	border-radius: .6rem;
+	margin-bottom: 1rem;
+}
+
+.button-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 button.add {
-    border-radius: .6rem;
-    width: 100%;
-    background: var(--orange);
-    color: var(--white);
-    padding: 1.2rem;
-    font-weight: 700;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .7rem;
-    box-shadow: 0 3px 16px var(--dark-grayish-blue);
+	border-radius: .6rem;
+	width: 100%;
+	background: var(--orange);
+	color: var(--white);
+	padding: 1.2rem;
+	font-weight: 700;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: .7rem;
+	box-shadow: 0 3px 16px var(--dark-grayish-blue);
+}
+
+.spinner-container {
+	width: 50px;
+	height: 50px;
 }
 
 @media (min-width: 1200px) {
-    .action-container {
-        width: 33%;
-    }
-
-    button.add {
-        width: 63%;
-    }
+	.actions {
+		display: flex;
+		gap: 2rem;
+	}
+	.action-container {
+		width: 240px;
+	}
 }

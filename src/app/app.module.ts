@@ -13,6 +13,7 @@ import { LogoComponent } from './components/logo/logo.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { ModalComponent } from './components/modal/modal.component';
 import { DialogModule } from '@angular/cdk/dialog';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DialogModule } from '@angular/cdk/dialog';
     ActionsComponent,
     CartComponent,
     LogoComponent,
-    ModalComponent
+    ModalComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

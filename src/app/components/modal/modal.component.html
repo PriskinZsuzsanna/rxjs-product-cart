@@ -1,17 +1,29 @@
-<div class="open-cart">
-    <div class="cart-header">
-        <h3>Cart</h3>
-        <p (click)="toggleCart()">X</p>
-    </div>
-    <div *ngFor="let item of cartObservable$ | async" class="items">
-        <div class="checkout-flex">
-            <img class="checkout-img" src="assets/images/image-product-1-thumbnail.jpg" alt="">
-            <div>
-                <p>{{item.title | titlecase}}</p>
-                <p>${{item.price | number: '1.2-2'}} x {{item.quantity}} <span>${{(item.price * item.quantity)  | number: '1.2-2'}}</span></p>
-            </div>
-            <img (click)="deleteItem(item.id)" src="assets/images/icon-delete.svg" alt="">
+<div class="cart-container">
+  <div class="cart-header">
+    <h3>Cart</h3>
+    <p (click)="closeModal()">x</p>
+  </div>
+  <div class="cart-body" *ngIf="cartObservable$ | async">
+    <div *ngFor="let item of cartObservable$ | async">
+      <div class="checkout-flex">
+        <img class="product" src="assets/images/image-product-1-thumbnail.jpg" alt="product-1">
+        <div class="text-icon-container">
+          <div>
+            <p>{{item.title | titlecase}}</p>
+            <p>${{item.price | number: '1.2-2'}} x {{item.quantity}} <span>${{(item.price * item.quantity)  | number: '1.2-2'}}</span></p>
+          </div>
+          <img class="delete-icon" (click)="deleteItem(item.id, $event)" src="assets/images/icon-delete.svg" alt="delete-item-icon">
         </div>
+      </div>
     </div>
-    <button class="checkout-btn">Checkout</button>
+    <div class="button-container">
+      <button>Checkout</button>
+    </div>
+  </div>
+  <div class="empty-message" *ngIf="!(cartObservable$ | async)" class="empty-message">
+    <p>Your cart is empty!</p>
+    <div class="button-container">
+      <button (click)="closeModal()">Continue shopping!</button>
+    </div>
+  </div>
 </div>

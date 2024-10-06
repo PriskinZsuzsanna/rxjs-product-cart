@@ -11,4 +11,8 @@ export class AppComponent {
   showCart$ = this.dataService.showCartObservable$;
   
   constructor(private dataService : DataService) { }
+  
+  closeModal(): void {
+    this.dataService.showCartSubject.next(false);
+  }
 }

@@ -9,19 +9,17 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class ModalComponent {
   showCart$ = this.dataService.showCartObservable$;
-  cartObservable$ = this.dataService.itemsInCart$
-    .pipe(
-      tap(data => console.log(data))
-    );
+  cartObservable$ = this.dataService.itemsInCart$;
 
   constructor(private dataService: DataService) { }
 
-  deleteItem(id: number): void {
+  deleteItem(id: number, event: Event): void {
+    event.stopPropagation();
     this.dataService.deleteItem(id);
     this.cartObservable$ = this.dataService.itemsInCart$;
   }
 
-  toggleCart(): void {
+  closeModal(): void {
     this.dataService.showCartSubject.next(false);
   }
 }
